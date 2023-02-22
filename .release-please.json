@@ -1,0 +1,10 @@
+{
+    "plugins": [
+      "@release-please/semantic-release",
+      "@release-please/helm"
+    ],
+    "helm": {
+      "chartDirs": "*/Chart.yaml",
+      "preReleasePrefix": "alpha"
+    }
+}
