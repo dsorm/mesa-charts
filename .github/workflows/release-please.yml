@@ -3,7 +3,7 @@ name: Release
 on:
   push:
     branches:
-      - master
+      - main
 
 jobs:
   release:
@@ -12,7 +12,15 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Release Please
-        uses: release-please/action@v2.7.2
+      - name: Install Node.js
+        uses: actions/setup-node@v2
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          node-version: "14.x"
+
+      - name: Install Release Please
+        run: npm install -g release-please
+
+      - name: Run Release Please
+        run: release-please
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
