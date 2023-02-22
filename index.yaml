@@ -12,4 +12,16 @@ entries:
     urls:
     - https://github.com/dsorm/mesa-external-ingress/releases/download/chart-0.1.0/chart-0.1.0.tgz
     version: 0.1.0
-generated: "2023-02-22T16:47:46.647591239Z"
+  mesa-external-ingress:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2023-02-22T17:41:26.849802874Z"
+    description: Creates Traefik internet-facing secured ingresses for services with
+      cert-manager integration
+    digest: fcc506f2bfcd5803ff912ba4dc6543b0cf032811e79d96d4b9ab4ed875e28750
+    name: mesa-external-ingress
+    type: application
+    urls:
+    - https://github.com/dsorm/mesa-charts/releases/download/mesa-external-ingress-0.1.0/mesa-external-ingress-0.1.0.tgz
+    version: 0.1.0
+generated: "2023-02-22T17:41:26.849807074Z"
