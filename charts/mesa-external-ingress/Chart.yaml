@@ -1,5 +1,5 @@
 apiVersion: v2
-name: chart
+name: mesa-external-ingress
 description: Creates Traefik internet-facing secured ingresses for services with cert-manager integration 
 
 # A chart can be either an 'application' or a 'library' chart.
